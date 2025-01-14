@@ -27,9 +27,5 @@ import { ObjectId } from 'mongodb'
     const body = await request.json()
     const id = new ObjectId(body.id)
     await client.db("test").collection("greetings").deleteOne({_id: id})
-    return Response.json({message: "successfully updated the document"})  
-  } 
-
-
-
-  //huhu
+    return Response.json({message: "successfully updated the document"})
+  }

@@ -6,19 +6,21 @@ type Greeting = {
   _id: string;
 }
 export default async function Back() {
-  const baseUrl = "https://m5g2-nextmongo.vercel.app"
-  const response = await fetch(`${baseUrl}/api`)
-  const greetings: Greeting[] = await response.json()
+  return 
+  <div></div>
+  // const baseUrl = "https://m5g2-nextmongo.vercel.app"
+  // const response = await fetch(`${baseUrl}/api`)
+  // const greetings: Greeting[] = await response.json()
  
-  return (
-      <div>
-      {greetings.map(greetingObj=>
-        <div><EditGreeting greetingObj={greetingObj} key={greetingObj._id.toString()}/>
-      </div>
-      )}
+  // return (
+  //     <div>
+  //     {greetings.map(greetingObj=>
+  //       <div><EditGreeting greetingObj={greetingObj} key={greetingObj._id.toString()}/>
+  //     </div>
+  //     )}
 
-    </div>
-  )
+  //   </div>
+  // )
 }
 /*viðbót, á að vera?*/
 export const fetchCache = 'force-no-store'
