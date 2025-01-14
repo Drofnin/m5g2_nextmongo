@@ -7,9 +7,10 @@ const uri = process.env.MONGO_URI
 
 if (!uri) {
   throw new Error('Invalid/Missing environment variable: "MONGODB_URI"');
+
 }
 
-console.log (uri)
+console.log ("this is uri",uri)
 const options = { 
     serverApi:{
         version: ServerApiVersion.v1,
