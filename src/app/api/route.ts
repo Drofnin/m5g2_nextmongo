@@ -1,4 +1,4 @@
-'use server' /*Authentication*/
+/* 'use server' /*Authentication*/
 import connect from '@/utils/startMongo'
 import { ObjectId } from 'mongodb'
 
@@ -28,13 +28,7 @@ import { ObjectId } from 'mongodb'
     const id = new ObjectId(body.id)
     await client.db("test").collection("greetings").deleteOne({_id: id})
     return Response.json({message: "successfully updated the document"})  
-  }
-
-
-
-
-
-
+  } 
 
 
 
