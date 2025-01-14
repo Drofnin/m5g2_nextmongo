@@ -29,3 +29,13 @@ import { ObjectId } from 'mongodb'
     await client.db("test").collection("greetings").deleteOne({_id: id})
     return Response.json({message: "successfully updated the document"})  
   }
+
+
+
+
+
+
+
+
+
+  //huhu
